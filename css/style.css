@@ -37,4 +37,26 @@ footer ul{
     vertical-align:top;
     padding:100px;
 }
+.flexContainer{
+    display:flex;
+    width:33%;
+}
+.workGrid{
+    display:grid;
+    grid-template-areas:"Travelpass"
+                        "Spark";
+    grid-template-rows: 100px;
+    grid-template-columns: 100px;   
+}
 
+@media only screen and (max-width: 600){
+    .flexContainer{
+        display:flex;
+    flex-direction:column;
+    width:100%;
+    grid-template-rows: 1fr;
+    grid-template-columns: 100px 100px;
+    grid-template-areas: 
+    "TravelPass"
+    "Spark";
+}}
